@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="sendRequest" value="发送ajax请求">
+<div id="myDiv"></div>
+<script>
+    window.onload = function() {
+        const sendRequest = document.getElementById("sendRequest")
+        sendRequest.onclick = function (){
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function (){
+                if(this.status===200){
+                    document.getElementById("myDiv").innerHTML = xhr.responseText
+                }
+            }
+            xhr.open('get','/old/ajax',true)
+            xhr.send()
+
+        }
+
+    }
+</script>
+</body>
+</html>

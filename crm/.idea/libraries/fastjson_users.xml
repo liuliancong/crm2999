@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fastjson-users">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../vueusers/web/WEB-INF/lib/fastjson-1.2.79.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
